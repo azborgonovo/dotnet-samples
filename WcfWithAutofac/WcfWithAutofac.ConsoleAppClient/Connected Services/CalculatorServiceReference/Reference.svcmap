@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="877de8f5-f082-4193-a7c3-2545f5a00be5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8000/WcfWithAutofac/CalculatorService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CalculatorService.xsd" MetadataType="Schema" ID="c538ef17-8dc8-406b-b394-26c24a0d0ee7" SourceId="1" SourceUrl="http://localhost:8000/WcfWithAutofac/CalculatorService?xsd=xsd1" />
+    <MetadataFile FileName="CalculatorService1.xsd" MetadataType="Schema" ID="ed56d7d9-c7a5-4ffd-b613-357e34baa455" SourceId="1" SourceUrl="http://localhost:8000/WcfWithAutofac/CalculatorService?xsd=xsd0" />
+    <MetadataFile FileName="CalculatorService.wsdl" MetadataType="Wsdl" ID="4040b2ef-423e-4f3a-9248-332158314c86" SourceId="1" SourceUrl="http://localhost:8000/WcfWithAutofac/CalculatorService?wsdl=wsdl0" />
+    <MetadataFile FileName="CalculatorService1.wsdl" MetadataType="Wsdl" ID="f5c16b0b-0384-4400-82d3-6c2930371e5c" SourceId="1" SourceUrl="http://localhost:8000/WcfWithAutofac/CalculatorService?wsdl" />
+    <MetadataFile FileName="CalculatorService.disco" MetadataType="Disco" ID="cf1b5c92-3f37-42a5-9d4f-e2db4fbeab05" SourceId="1" SourceUrl="http://localhost:8000/WcfWithAutofac/CalculatorService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
