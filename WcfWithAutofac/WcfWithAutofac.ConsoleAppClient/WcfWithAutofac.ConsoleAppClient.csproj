@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.3.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.3.1\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Wcf, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.Wcf.4.0.0\lib\net45\Autofac.Integration.Wcf.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -44,42 +50,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\CalculatorServiceReference\Reference.cs">
+    <Compile Include="CalculatorGateway.cs" />
+    <Compile Include="Connected Services\WcfWithAutofacServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ICalculatorGateway.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Connected Services\CalculatorServiceReference\CalculatorService.wsdl" />
-    <None Include="Connected Services\CalculatorServiceReference\CalculatorService.xsd">
+    <None Include="Connected Services\WcfWithAutofacServiceReference\CalculatorService.wsdl" />
+    <None Include="Connected Services\WcfWithAutofacServiceReference\Service.wsdl" />
+    <None Include="Connected Services\WcfWithAutofacServiceReference\Service.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\CalculatorServiceReference\CalculatorService1.wsdl" />
-    <None Include="Connected Services\CalculatorServiceReference\CalculatorService1.xsd">
+    <None Include="Connected Services\WcfWithAutofacServiceReference\Service1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\CalculatorServiceReference\" />
+    <WCFMetadataStorage Include="Connected Services\WcfWithAutofacServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalculatorServiceReference\CalculatorService.disco" />
+    <None Include="Connected Services\WcfWithAutofacServiceReference\Service.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalculatorServiceReference\configuration91.svcinfo" />
+    <None Include="Connected Services\WcfWithAutofacServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalculatorServiceReference\configuration.svcinfo" />
+    <None Include="Connected Services\WcfWithAutofacServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\CalculatorServiceReference\Reference.svcmap">
+    <None Include="Connected Services\WcfWithAutofacServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

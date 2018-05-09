@@ -3,7 +3,7 @@
 namespace WcfWithAutofac.WcfServiceLibrary
 {
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
-    public interface ICalculator
+    public interface ICalculatorService
     {
         [OperationContract]
         double Add(double n1, double n2);
